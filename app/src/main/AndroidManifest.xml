@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".sign_in_page_48_activity"></activity>
+        <activity
+            android:name=".ui.login.UserLoginPage_48_Activity"
+            android:label="@string/title_activity_user_login_page_48_" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
