@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bakar"></activity>
         <activity android:name=".sign_in_page_48_activity" />
         <activity
             android:name=".ui.login.UserLoginPage_48_Activity"
