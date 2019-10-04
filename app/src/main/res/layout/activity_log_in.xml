@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LogInActivity">
 
     <EditText
-        android:id="@+id/emlSP"
+        android:id="@+id/editText2"
         android:layout_width="332dp"
         android:layout_height="75dp"
         android:ems="10"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.407" />
 
     <EditText
-        android:id="@+id/psdSP"
+        android:id="@+id/editText"
         android:layout_width="332dp"
         android:layout_height="75dp"
         android:ems="10"
@@ -35,10 +35,10 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <Button
-        android:id="@+id/btnSP"
+        android:id="@+id/button"
         android:layout_width="111dp"
         android:layout_height="70dp"
-        android:text="Sign Up"
+        android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -46,10 +46,10 @@
         app:layout_constraintVertical_bias="0.62" />
 
     <TextView
-        android:id="@+id/tvALD"
+        android:id="@+id/textView"
         android:layout_width="247dp"
         android:layout_height="53dp"
-        android:text="Already have an account? Sign in here."
+        android:text="Not registered? Sign up here."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
