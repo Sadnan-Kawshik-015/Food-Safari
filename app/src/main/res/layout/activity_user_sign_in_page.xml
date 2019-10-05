@@ -21,12 +21,12 @@
             android:layout_width="match_parent"
             android:layout_height="173dp"
             android:background="#ffffff"
-            android:text="@string/Signin"
+            android:text="SIGN UP"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:textColor="#0D47A1" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/userNameEditText"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -34,7 +34,7 @@
             android:text="Name" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/userEmailEditText"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -42,7 +42,7 @@
             android:text="e-mail" />
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/userPhnoEditText"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -50,7 +50,7 @@
             android:text="phone no" />
 
         <EditText
-            android:id="@+id/editText10"
+            android:id="@+id/userPasswordEditText"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -59,7 +59,7 @@
             tools:text="passWORD" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/userAcnoEditText"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -67,7 +67,7 @@
             android:text="Bank ac no" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/userRegisterButton"
             android:layout_width="416dp"
             android:layout_height="94dp"
             android:background="#0D55A1"
@@ -87,11 +87,6 @@
             android:layout_height="wrap_content"
             android:text="Button" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
 
 
     </LinearLayout>

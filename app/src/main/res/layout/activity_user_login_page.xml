@@ -18,7 +18,7 @@
     ]]>
 
     <Button
-        android:id="@+id/loginbutton"
+        android:id="@+id/userLoginButton"
         android:layout_width="172dp"
         android:layout_height="61dp"
         android:text="log in"
@@ -36,7 +36,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/userSignUpButton"
         android:layout_width="172dp"
         android:layout_height="61dp"
         android:text="Sign Up"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.742" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/userLoginBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACk"
@@ -74,7 +74,7 @@
 
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/loginUserEmail"
         android:layout_width="332dp"
         android:layout_height="79dp"
         android:layout_marginStart="24dp"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/loginUserPassword"
         android:layout_width="333dp"
         android:layout_height="85dp"
         android:layout_marginTop="32dp"
@@ -102,11 +102,11 @@
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.616"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.423" />
 
     <ImageView
         android:layout_width="151dp"
