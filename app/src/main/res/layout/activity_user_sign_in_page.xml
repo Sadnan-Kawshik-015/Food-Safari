@@ -26,7 +26,7 @@
             android:textColor="#0D47A1" />
 
         <EditText
-            android:id="@+id/editTextName"
+            android:id="@+id/editText6"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -34,7 +34,7 @@
             android:text="Name" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editText8"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -42,7 +42,7 @@
             android:text="e-mail" />
 
         <EditText
-            android:id="@+id/editTextphno"
+            android:id="@+id/editText9"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -50,7 +50,7 @@
             android:text="phone no" />
 
         <EditText
-            android:id="@+id/loginEditTextPassword"
+            android:id="@+id/editText10"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
@@ -59,7 +59,7 @@
             tools:text="passWORD" />
 
         <EditText
-            android:id="@+id/editTextacno"
+            android:id="@+id/editText11"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:ems="10"
