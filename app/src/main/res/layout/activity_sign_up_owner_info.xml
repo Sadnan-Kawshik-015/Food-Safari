@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.044" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/userNametextView"
         android:layout_width="220dp"
         android:layout_height="36dp"
         android:text="Owner's name"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.199" />
 
     <EditText
-        android:id="@+id/spoi_name"
+        android:id="@+id/userProfileNameEditText"
         android:layout_width="315dp"
         android:layout_height="66dp"
         android:ems="10"
@@ -53,7 +53,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/userEmailTextView"
         android:layout_width="220dp"
         android:layout_height="36dp"
         android:text="Email"
@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.394" />
 
     <EditText
-        android:id="@+id/spoi_email"
+        android:id="@+id/userEmailEditText"
         android:layout_width="315dp"
         android:layout_height="66dp"
         android:ems="10"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.584" />
 
     <EditText
-        android:id="@+id/spoi_res_name"
+        android:id="@+id/userAddressEditText"
         android:layout_width="315dp"
         android:layout_height="66dp"
         android:ems="10"
@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.678" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/userPhnoTextView"
         android:layout_width="220dp"
         android:layout_height="36dp"
         android:text="Restaurant Location"
@@ -127,7 +127,7 @@
         app:layout_constraintVertical_bias="0.782" />
 
     <EditText
-        android:id="@+id/spoi_res_location"
+        android:id="@+id/userPhnoEditText"
         android:layout_width="315dp"
         android:layout_height="66dp"
         android:ems="10"
