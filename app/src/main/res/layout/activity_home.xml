@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/userEmailTextView"
         android:layout_width="333dp"
         android:layout_height="47dp"
         android:text="Welcome! You are logged in."
