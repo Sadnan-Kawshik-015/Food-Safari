@@ -94,7 +94,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <EditText
         android:id="@+id/userAddressEditText"
@@ -106,11 +106,11 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <TextView
         android:id="@+id/userPhnoTextView"
@@ -124,7 +124,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintVertical_bias="0.661" />
 
     <EditText
         android:id="@+id/userPhnoEditText"
@@ -136,11 +136,11 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.739" />
 
     <Button
     <<<<<<< HEAD:app
@@ -150,8 +150,16 @@
         android:layout_width="249dp"
         android:layout_height="48dp"
         android:text="Change Password"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="693dp" />/src/main/res/layout/activity_restaurant_sign_up.xml
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:text="@string/common_google_play_services_update_button"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="724dp" />/src/main/res/layout/activity_restaurant_sign_up.xml
     android:id="@+id/userSignUpButton"
     =======
     android:id="@+id/spoi_next_button"
