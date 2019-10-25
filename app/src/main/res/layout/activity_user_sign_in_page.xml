@@ -8,88 +8,133 @@
     android:visibility="visible"
     tools:context="@string/Signin">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="182dp">
+    <TextView
+        android:id="@+id/textView2p"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:text="CONFIRM PASSWORD"
+        app:layout_constraintBottom_toTopOf="@+id/usPasswordEditText2"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/usiptextView"
+        android:layout_width="180dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Sign Up As a Customer"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="173dp"
-            android:background="#ffffff"
-            android:text="SIGN UP"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-            android:textColor="#0D47A1" />
+    <EditText
+        android:id="@+id/uNameEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usiptextView" />
 
-        <EditText
-            android:id="@+id/userNameEditText"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+    <EditText
+        android:id="@+id/usEmailEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uNameEditText"
+        tools:text="E-mail" />
 
-        <EditText
-            android:id="@+id/userEmailEditText"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="e-mail" />
+    <EditText
+        android:id="@+id/usPhnoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usEmailEditText"
+        tools:text="Phone No" />
 
-        <EditText
-            android:id="@+id/userPhnoEditText"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:inputType="phone"
-            android:text="phone no" />
+    <TextView
+        android:id="@+id/textView1p"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="88dp"
+        android:text="GIVE PASSWORD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usPhnoEditText" />
 
-        <EditText
-            android:id="@+id/userPasswordEditText"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="@string/invalid_password"
-            tools:text="passWORD" />
+    <EditText
+        android:id="@+id/usPasswordEditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1p" />
 
-        <EditText
-            android:id="@+id/userAcnoEditText"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Bank ac no" />
+    <EditText
+        android:id="@+id/usPasswordEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/userRegisterButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/userRegisterButton"
-            android:layout_width="416dp"
-            android:layout_height="94dp"
-            android:background="#0D55A1"
-            android:layerType="software"
-            android:longClickable="true"
-            android:text="Register"
-            android:textSize="30sp" />
+    <Button
+        android:id="@+id/usibackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="BACk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"/>
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-
-
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/userRegisterButton"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/common_signin_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/usibackbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
