@@ -7,11 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class UserLoginPage extends AppCompatActivity implements View.OnClickListener {
 
     private EditText loginEmailEditText;
     private EditText loginPasswordEditText;
+
+    private String userEmail;
+    private String userPassword;
+
+
     private Button userLoginButton;
     private Button userSignUpButton;
     private Button backButton;
@@ -30,15 +36,38 @@ public class UserLoginPage extends AppCompatActivity implements View.OnClickList
 
         userLoginButton.setOnClickListener(this);
         userSignUpButton.setOnClickListener(this);
+        backButton.setOnClickListener(this);
     }
 
 
     @Override
     public  void onClick(View v){
+
         switch (v.getId()){
+
+
+
+
             case R.id.userLoginButton:
 
+                userEmail = loginEmailEditText.getText().toString();
+                userPassword = loginPasswordEditText.getText().toString();
+
+                if(userEmail.isEmpty() ){
+                    Toast.makeText(UserLoginPage.this,"Please fill your Email ID",Toast.LENGTH_SHORT).show();
+                }
+                else if(userPassword.isEmpty()){
+                    Toast.makeText(UserLoginPage.this,"Please give your Password",Toast.LENGTH_SHORT).show();
+                }
+
+                else{
+                    Toast.makeText(UserLoginPage.this,"You are Logged in",Toast.LENGTH_SHORT).show();
+                }
+
                 break;
+
+
+
 
             case R.id.userSignUpButton:
 
