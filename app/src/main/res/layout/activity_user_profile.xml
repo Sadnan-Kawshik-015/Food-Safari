@@ -142,8 +142,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.587" />
 
-    <Button
-    <<<<<<< HEAD:app
+    <Button android:id="@+id/button3" />
+
+    < android:id="@+id/" />
+
+    < android:id="@+id/2" />
+
+    < android:id="@+id/3" />
+
+    < android:id="@+id/4" />
+
+    < android:id="@+id/5" />
+
+    < android:id="@+id/6" />
+
+    android:id="@+id/7"
+
+    < HEAD:app
 
     <Button
         android:id="@+id/userPasswordChangeButton"

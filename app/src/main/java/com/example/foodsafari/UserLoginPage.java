@@ -26,6 +26,7 @@ public class UserLoginPage extends AppCompatActivity implements View.OnClickList
         loginPasswordEditText = findViewById(R.id.loginUserPassword);
         userLoginButton = findViewById(R.id.userLoginButton);
         userSignUpButton = findViewById(R.id.userSignUpButton);
+        backButton = findViewById(R.id.userLoginBackButton);
 
         userLoginButton.setOnClickListener(this);
         userSignUpButton.setOnClickListener(this);
@@ -41,8 +42,14 @@ public class UserLoginPage extends AppCompatActivity implements View.OnClickList
 
             case R.id.userSignUpButton:
 
-                Intent intent = new Intent(getApplicationContext(),UserSignInPage.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(getApplicationContext(),UserSignInPage.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.userLoginBackButton:
+
+                Intent intent2 = new Intent(getApplicationContext(),userSelection.class);
+                startActivity(intent2);
                 break;
         }
 
