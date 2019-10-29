@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class RestaurantInfo extends AppCompatActivity {
+    /**Detail for owner.Need to create owner class to store**/
     TextView owner_name,email,restaurant_name,location;
     ImageView owner_pic;
 
@@ -15,6 +16,9 @@ public class RestaurantInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_info);
+
+        getSupportActionBar().setTitle("Owner Information");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         owner_name=findViewById(R.id.tv_restaurant_owner_name);
         owner_pic=findViewById(R.id.iv_restaurant_owner_image);

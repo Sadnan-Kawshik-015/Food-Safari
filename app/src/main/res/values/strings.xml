@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Food Safari</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="fragment_home">Menu</string>
+    <string name="fragment_my_order">My Orders</string>
+    <string name="fragment_my_profile">My Profile</string>
+    <string name="fragment_discount">Discounts</string>
+    <string name="fragment_helpline">Helpline</string>
+
 </resources>

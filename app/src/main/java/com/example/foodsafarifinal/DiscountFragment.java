@@ -9,11 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class MyProfileFragment extends Fragment {
+public class DiscountFragment extends Fragment {
+
+    /**Still haven't done the work in this.Anyone want to do just let me know**/
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_profile,container,false);
+        return inflater.inflate(R.layout.fragment_discount,container,false);
     }
 }
