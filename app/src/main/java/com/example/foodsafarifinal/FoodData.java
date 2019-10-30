@@ -18,6 +18,13 @@ public class FoodData {
         this.foodImage = foodImage;
         this.activeStatus = activeStatus;
     }
+    public FoodData(String foodName, String foodDetails, String foodPrice, int foodImage) {
+        this.foodName = foodName;
+        this.foodDetails = foodDetails;
+        this.foodPrice = foodPrice;
+        this.foodImage = foodImage;
+        this.activeStatus="Active";
+    }
 
     public String getFoodName() {
         return foodName;

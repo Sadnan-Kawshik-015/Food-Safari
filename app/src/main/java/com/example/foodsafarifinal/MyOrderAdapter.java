@@ -45,7 +45,7 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderViewHolder>{
         holder.item_reorder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(mContext,"Ordered Again",Toast.LENGTH_SHORT).show();
             }
         });
         setAnimation(holder.itemView,position);
@@ -65,7 +65,7 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderViewHolder>{
     }
     @Override
     public int getItemCount() {
-        return 0;
+        return myFoodList.size();
     }
 }
 class MyOrderViewHolder extends RecyclerView.ViewHolder {
