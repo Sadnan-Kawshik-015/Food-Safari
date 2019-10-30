@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AdditionalOwnerInformation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rl_update_user_details"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/iv_user_profile_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_user_profile_icon"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginTop="15sp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_user_info_title"
+                    android:text="Add Information"
+                    android:textSize="32sp"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_update_user_details"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:src="@drawable/ic_add_a_photo_black_24dp"
+                    android:id="@+id/iv_select_owner_image"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="150dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/et_owner_restaurant_name"
+                    android:layout_below="@+id/iv_select_owner_image"
+                    android:hint="Enter Restaurant's Name"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_owner_restaurant_location"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/et_owner_restaurant_name"
+                    android:hint="Enter Restaurant Location"
+                    android:textSize="18sp"
+                    />
+
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_owner_restaurant_location"
+                    android:layout_marginTop="60dp"
+                    android:background="@color/grey"
+                    android:text="Update"
+                    android:id="@+id/btn_update_owner_info"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

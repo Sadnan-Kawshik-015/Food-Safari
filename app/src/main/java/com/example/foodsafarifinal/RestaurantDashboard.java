@@ -32,8 +32,8 @@ public class RestaurantDashboard extends AppCompatActivity {
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(RestaurantDashboard.this,"Best Seller",Toast.LENGTH_SHORT).show();
-                changeActivity(RestaurantInfo.class);
+                Toast.makeText(RestaurantDashboard.this,"Update info",Toast.LENGTH_SHORT).show();
+                changeActivity(AdditionalOwnerInformation.class);
             }
         });
         settings.setOnClickListener(new View.OnClickListener() {

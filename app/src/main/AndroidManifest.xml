@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.foodsafarifinal">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,19 +11,26 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_food_safari_logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".RestaurantMenu"
-            android:parentActivityName=".UserNewsFeed"></activity>
+        android:theme="@style/AppTheme">``
+        <activity android:name=".OwnerShowMenu"></activity>
+        <activity
+            android:name=".AdditionalOwnerInformation"
+            android:parentActivityName=".RestaurantDashboard" />
+        <activity
+            android:name=".RestaurantMenu"
+            android:parentActivityName=".UserNewsFeed" />
         <activity
             android:name=".UserNewsFeed"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".UpdateFood"
-            android:parentActivityName=".RestaurantDashboard"/>
+        <activity
+            android:name=".UpdateFood"
+            android:parentActivityName=".RestaurantDashboard" />
         <activity
             android:name=".RestaurantSettings"
             android:parentActivityName=".RestaurantDashboard" />
-        <activity android:name=".RestaurantInfo"
-            android:parentActivityName=".RestaurantDashboard"/>
+        <activity
+            android:name=".RestaurantInfo"
+            android:parentActivityName=".RestaurantDashboard" />
         <activity android:name=".RestaurantDashboard" />
         <activity
             android:name=".Logo_Splash"
