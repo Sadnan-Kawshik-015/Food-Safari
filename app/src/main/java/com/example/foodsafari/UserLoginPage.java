@@ -1,5 +1,6 @@
 package com.example.foodsafari;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,7 +10,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.logintest.HomeActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class UserLoginPage extends AppCompatActivity implements View.OnClickListener {
+
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
 
     private EditText loginEmailEditText;
     private EditText loginPasswordEditText;
@@ -37,6 +48,28 @@ public class UserLoginPage extends AppCompatActivity implements View.OnClickList
         userLoginButton.setOnClickListener(this);
         userSignUpButton.setOnClickListener(this);
         backButton.setOnClickListener(this);
+
+        mFirebaseAuth = FirebaseAuth.getInstance();
+       mAuthStateListener = new FirebaseAuth.AuthStateListener(){
+
+           @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
+               FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+
+               if(mFirebaseUser != null){
+                   Toast.makeText(UserLoginPage.this,"You are logged in",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+               }
+               else{
+                   Toast.makeText(UserLoginPage.this,"Please Login",Toast.LENGTH_SHORT).show();
+               }
+
+           }
+
+       };
+
+
+
     }
 
 
@@ -61,6 +94,19 @@ public class UserLoginPage extends AppCompatActivity implements View.OnClickList
                 }
 
                 else{
+                    mFirebaseAuth.signInWithEmailAndPassword(userEmail,userPassword).addOnCompleteListener(UserLoginPage.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(!task.isSuccessful()){
+                                Toast.makeText(UserLoginPage.this,"Login failed, Please try again",Toast.LENGTH_SHORT).show();
+                            }
+                            else{
+                                startActivity(new Intent(getApplicationContext(),UserLoginPage.class));
+                            }
+                        }
+                    });
+
+
                     Toast.makeText(UserLoginPage.this,"You are Logged in",Toast.LENGTH_SHORT).show();
                 }
 

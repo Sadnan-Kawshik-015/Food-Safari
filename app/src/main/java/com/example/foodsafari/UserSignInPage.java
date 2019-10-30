@@ -1,5 +1,6 @@
 package com.example.foodsafari;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,7 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class UserSignInPage extends AppCompatActivity implements View.OnClickListener {
+
+    private FirebaseAuth mFirebaseAuth;
 
     private Button userRegisterButton;
     private Button usbackButton;
@@ -44,6 +52,8 @@ public class UserSignInPage extends AppCompatActivity implements View.OnClickLis
         userRegisterButton.setOnClickListener(this);
         usbackButton.setOnClickListener(this);
 
+        mFirebaseAuth = FirebaseAuth.getInstance();
+
 
 
     }
@@ -69,6 +79,26 @@ public class UserSignInPage extends AppCompatActivity implements View.OnClickLis
                 }
 
                 else{
+
+                    mFirebaseAuth.createUserWithEmailAndPassword(userEmail,userPassword1).addOnCompleteListener(UserSignInPage.this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+
+                            if(!task.isSuccessful()){
+                                Toast.makeText(UserSignInPage.this,"SignUp failed, please try again",Toast.LENGTH_SHORT).show();
+
+                            }
+
+                            else{
+
+                                startActivity(new Intent(getApplicationContext(),UserSignInPage.class));
+
+                            }
+
+                        }
+                    });
+
+
                     Toast.makeText(UserSignInPage.this,"Thanks for Signing up ",Toast.LENGTH_SHORT).show();
                 }
 
