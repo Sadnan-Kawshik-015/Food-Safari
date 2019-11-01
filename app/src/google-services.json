@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "408058590981",
+    "firebase_url": "https://food-safari-fe38c.firebaseio.com",
+    "project_id": "food-safari-fe38c",
+    "storage_bucket": "food-safari-fe38c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408058590981:android:a37ba741dea00c42a2a96c",
+        "android_client_info": {
+          "package_name": "com.example.foodsafari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408058590981-lrb6riglhdpnkenp488rg8h24ljbnpdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZhy2kDTe4wWxtGu5jAXrb7dIpYjNX9M0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408058590981-lrb6riglhdpnkenp488rg8h24ljbnpdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
