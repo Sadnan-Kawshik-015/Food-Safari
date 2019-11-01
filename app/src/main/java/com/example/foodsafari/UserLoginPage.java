@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.logintest.HomeActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -58,7 +58,7 @@ public class UserLoginPage extends AppCompatActivity implements View.OnClickList
 
                if(mFirebaseUser != null){
                    Toast.makeText(UserLoginPage.this,"You are logged in",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(), userSelection.class));
                }
                else{
                    Toast.makeText(UserLoginPage.this,"Please Login",Toast.LENGTH_SHORT).show();
