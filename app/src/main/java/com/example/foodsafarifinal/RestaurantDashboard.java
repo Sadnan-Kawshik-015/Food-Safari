@@ -54,6 +54,7 @@ public class RestaurantDashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(RestaurantDashboard.this,"Menu",Toast.LENGTH_SHORT).show();
+                changeActivity(OwnerShowMenu.class);
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {

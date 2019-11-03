@@ -3,13 +3,11 @@ package com.example.foodsafarifinal;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
@@ -64,7 +62,7 @@ public class UserNewsFeed extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_help_line:
                 toolbar.setTitle(R.string.fragment_helpline);
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HelpLineFragnent()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HelpLineFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

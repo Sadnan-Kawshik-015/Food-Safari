@@ -4,11 +4,58 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="32sp"
-        android:text="HelpLine"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_helpline"
+        android:layout_height="220dp"
+        android:background="@color/colorPrimary">
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_help_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_helpline"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_helpline"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="15sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_helpline"
+            android:text="Helpline"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/rl_helpline"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_marginTop="5dp"
+           android:text="For more Information check out:"
+           android:layout_below="@id/rl_helpline"
+           android:scrollbars="vertical"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_marginTop="5dp"
+           android:textColor="@android:color/holo_blue_dark"
+           android:text="Link"
+           android:id="@+id/tv_helpline_link"
+           android:scrollbars="vertical"/>
+
+
+
+   </LinearLayout>
 </RelativeLayout>
