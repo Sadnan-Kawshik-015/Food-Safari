@@ -32,17 +32,12 @@
     <androidx.recyclerview.widget.RecyclerView
 
         android:layout_width="match_parent"
-        android:id = "@+id/orderlistrv"
+        android:id="@+id/orderlistrv"
         android:layout_below="@+id/colrl1"
         android:padding="10dp"
         android:scrollbars="vertical"
 
-        >
-
-
-
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="wrap_content" />
 
 
 
