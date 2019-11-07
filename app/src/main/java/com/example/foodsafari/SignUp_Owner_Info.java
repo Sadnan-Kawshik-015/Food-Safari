@@ -1,4 +1,4 @@
-package com.example.logintest;
+package com.example.foodsafari;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -55,18 +55,7 @@ public class SignUpOwnerInfo extends AppCompatActivity {
 
                     startActivity(new Intent(SignUpOwnerInfo.this,UploadImageFB.class));
 
-                    /*
-                    Intent i = new Intent(SignUpOwnerInfo.this,RestaurantInfo.class);
-
-                    i.putExtra("userName",ownName.getText().toString());
-                    i.putExtra("email",ownEmail.getText().toString());
-                    i.putExtra("resName",resName.getText().toString());
-                    i.putExtra("resLoc",resLocation.getText().toString());
-
-                    startActivity(i);
-                    */
-
-                    //startActivity(new Intent(SignUpOwnerInfo.this,CaptureImage.class));
+                    
 
                 }
 
@@ -103,11 +92,6 @@ public class SignUpOwnerInfo extends AppCompatActivity {
 
 
         String rLocation = resLocation.getText().toString().trim();
-
-
-        //String key = databaseReference.push().getKey();
-
-        //String key = email2;
 
         String key = Constant.res_owner_pass;
 
