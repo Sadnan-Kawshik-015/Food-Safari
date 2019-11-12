@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +13,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,7 @@ public class MenuFragment extends Fragment {
 
     RecyclerView resRecylerView;
     List<RestaurantData>myRestaurantList;
+
 
     SearchView resSearchView;/**This feature is here to implement the search functionality.
      To watch further check out https://www.youtube.com/watch?v=f1nC8HcbMOw**/
@@ -40,6 +44,7 @@ public class MenuFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_menu,container,false);
 
         resRecylerView=(RecyclerView)view.findViewById(R.id.rv_user_news_feed);
+
 
         resSearchView=view.findViewById(R.id.sv_restaurant_list);
 
@@ -94,6 +99,7 @@ public class MenuFragment extends Fragment {
                 return false;
             }
         });
+
 
         return view;
     }

@@ -5,6 +5,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +17,7 @@ public class RestaurantMenu extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<FoodData>myFoodList;
+
     FoodData mFoodData;
     /**Recyler view for menu item**/
 
@@ -21,6 +26,7 @@ public class RestaurantMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_menu);
         recyclerView=findViewById(R.id.rv_restaurant_menu);
+        //addToCart=findViewById(R.id.fb_restaurant_menu);
         getSupportActionBar().setTitle("Items");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -39,5 +45,6 @@ public class RestaurantMenu extends AppCompatActivity {
 
         FoodAdapter foodAdapter=new FoodAdapter(RestaurantMenu.this,myFoodList);
         recyclerView.setAdapter(foodAdapter);
+
     }
 }

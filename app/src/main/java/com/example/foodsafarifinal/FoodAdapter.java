@@ -1,13 +1,16 @@
 package com.example.foodsafarifinal;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -38,7 +41,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FoodViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final FoodViewHolder holder, final int position) {
 
         /**Used to set the values in the menu item template. Each menu item wil be stored under restaurants.Layout file for this
          * is recyler_menu_row.You can give suggestion if any change to suggest.**/
@@ -48,6 +51,17 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodViewHolder>{
         holder.menu_description.setText(myFoodList.get(position).getFoodDetails());
         holder.menu_price.setText(myFoodList.get(position).getFoodPrice());
         holder.menu_status.setText(myFoodList.get(position).getActiveStatus());
+
+        holder.menu_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(mContext,CartDetails.class);
+                intent.putExtra("FoodItem",myFoodList.get(position));
+                mContext.startActivity(intent);
+
+            }
+        });
 
         setAnimation(holder.itemView,position);
     }
@@ -76,6 +90,7 @@ class FoodViewHolder extends RecyclerView.ViewHolder {
     ImageView menU_img;
     TextView menu_title,menu_description,menu_price,menu_status;
     CardView menu_card;
+    Button menu_add;
     public FoodViewHolder( View itemView) {
         super(itemView);
 
@@ -85,5 +100,6 @@ class FoodViewHolder extends RecyclerView.ViewHolder {
         menu_price=itemView.findViewById(R.id.tv_item_price);
         menu_status=itemView.findViewById(R.id.tv_item_status);
         menu_card=itemView.findViewById(R.id.cv_menu_details);
+
     }
 }

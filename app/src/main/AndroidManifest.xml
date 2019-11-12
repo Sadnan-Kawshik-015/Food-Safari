@@ -11,9 +11,12 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_food_safari_logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">``
-        <activity android:name=".OwnerShowMenu"
-            android:parentActivityName=".RestaurantDashboard"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".CartDetails"
+            android:parentActivityName=".RestaurantMenu"></activity>
+        <activity
+            android:name=".OwnerShowMenu"
+            android:parentActivityName=".RestaurantDashboard" />
         <activity
             android:name=".AdditionalOwnerInformation"
             android:parentActivityName=".RestaurantDashboard" />
