@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateFood">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_update_food1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_dining_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_local_dining_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_restaurant_owner_update_food_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_dining_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Add Food Item"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_update_food1"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:src="@drawable/ic_add_a_photo_black_24dp"
+                    android:id="@+id/iv_select_image"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="150dp"/>
+
+
+                <Button
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/et_selected_food"
+                    android:layout_below="@+id/iv_select_image"
+                    android:hint="Capture Image"
+                    android:textSize="18sp"
+                    />
+
+                <Button
+
+                    android:id="@+id/et_selected_food2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/iv_select_image"
+                    android:layout_marginTop="6dp"
+                    android:hint="Browse Image"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_selected_food_details"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/et_selected_food"
+                    android:hint="Enter Food Name"
+                    android:textSize="18sp"
+                    />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    android:text="Active Status"
+                    android:thumb="@drawable/sw_thumb"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:id="@+id/sw_btn_active_status"
+                    android:layout_below="@+id/et_selected_food_details"
+                    app:track="@drawable/sw_track"
+                    app:showText="true"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_selected_food_price"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/sw_btn_active_status"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_selected_food_price"
+                    android:id="@+id/tv_update_food_date"
+                    android:text="Update Date"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@android:color/black"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_update_food_date"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/grey"
+                    android:text="Update"
+                    android:id="@+id/btn_update_food"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

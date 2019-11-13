@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RestaurantMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_layout_1"
+        android:layout_height="200dp"
+        android:background="@drawable/img_food_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="15sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="Menu"
+            android:textSize="45sp"
+            android:textColor="@android:color/primary_text_dark_nodisable"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rv_restaurant_menu"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
