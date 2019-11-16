@@ -13,20 +13,32 @@ public class FoodData implements Parcelable {
     private String foodPrice;
     private int foodImage;
     private String activeStatus;
+    private String restaurantName;
 
-    public FoodData(String foodName, String foodDetails, String foodPrice, int foodImage, String activeStatus) {
+    public FoodData(String foodName, String foodDetails, String foodPrice, int foodImage, String activeStatus, String restaurantName) {
         this.foodName = foodName;
         this.foodDetails = foodDetails;
         this.foodPrice = foodPrice;
         this.foodImage = foodImage;
         this.activeStatus = activeStatus;
+        this.restaurantName=restaurantName;
     }
-    public FoodData(String foodName, String foodDetails, String foodPrice, int foodImage) {
+
+    public String getRestaurantName() {
+        return restaurantName;
+    }
+
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
+    }
+
+    public FoodData(String foodName, String foodDetails, String foodPrice, int foodImage, String restaurantName) {
         this.foodName = foodName;
         this.foodDetails = foodDetails;
         this.foodPrice = foodPrice;
         this.foodImage = foodImage;
         this.activeStatus="Active";
+        this.restaurantName=restaurantName;
     }
 
 
@@ -36,6 +48,7 @@ public class FoodData implements Parcelable {
         foodPrice = in.readString();
         foodImage = in.readInt();
         activeStatus = in.readString();
+        restaurantName=in.readString();
     }
 
     public static final Creator<FoodData> CREATOR = new Creator<FoodData>() {
@@ -82,5 +95,6 @@ public class FoodData implements Parcelable {
         parcel.writeString(foodPrice);
         parcel.writeInt(foodImage);
         parcel.writeString(activeStatus);
+        parcel.writeString(restaurantName);
     }
 }

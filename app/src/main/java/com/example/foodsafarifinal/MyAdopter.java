@@ -43,7 +43,7 @@ public class MyAdopter  extends RecyclerView.Adapter<RestaurantViewHolder> imple
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RestaurantViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final RestaurantViewHolder holder, int position) {
 
         holder.imageView.setImageResource(restaurantList.get(position).getRestaurantImage());
         holder.resTitle.setText(restaurantList.get(position).getRestaurantName());
@@ -52,6 +52,7 @@ public class MyAdopter  extends RecyclerView.Adapter<RestaurantViewHolder> imple
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(resContext,RestaurantMenu.class);
+                intent.putExtra("RestaurantName",holder.resTitle.getText().toString());
                 resContext.startActivity(intent);
             }
         });

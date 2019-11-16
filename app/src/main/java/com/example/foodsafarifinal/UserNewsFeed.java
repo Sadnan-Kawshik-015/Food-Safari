@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -91,6 +92,10 @@ public class UserNewsFeed extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Toast.makeText(UserNewsFeed.this,"Cart Open",Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(UserNewsFeed.this,MyCart.class);
+        //intent.putExtra("FoodItem",myFoodList.get(position));
+        startActivity(intent);
+
         return super.onOptionsItemSelected(item);
     }
 }

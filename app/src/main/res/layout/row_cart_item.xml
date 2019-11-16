@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="15dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_my_cart"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Product Name"
+            android:id="@+id/tv_my_cart_item_name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_my_cart_item_quantity"
+            android:layout_below="@+id/tv_my_cart_item_name"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Product Quantity"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="end" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tv_my_cart_item_price"
+            android:layout_below="@+id/tv_my_cart_item_quantity"
+            android:text="Product Price"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_my_cart_item_restaurant_name"
+            android:layout_below="@+id/tv_my_cart_item_price"
+            android:gravity="center"
+            android:text="Restaurant Name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

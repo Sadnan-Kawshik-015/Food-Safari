@@ -36,13 +36,13 @@ public class MyOrderFragment extends Fragment {
         myOrderRecyclerView.setLayoutManager(gridLayoutManager);
 
         myFoodList=new ArrayList<>();
-        mFoodData=new FoodData("Burger","A Bread Dish With Patty Inside","350",R.drawable.img_food_item_2);
+        mFoodData=new FoodData("Burger","A Bread Dish With Patty Inside","350",R.drawable.img_food_item_2,"Tacos");
         myFoodList.add(mFoodData);
-        mFoodData=new FoodData("Kachhi","A Special Mutton Biriyani","150",R.drawable.img_food_item_2);
+        mFoodData=new FoodData("Kachhi","A Special Mutton Biriyani","150",R.drawable.img_food_item_2,"Mr.Manik");
         myFoodList.add(mFoodData);
-        mFoodData=new FoodData("Sandwitch","A Bread Dish With Meat Inside","50",R.drawable.img_food_item_2);
+        mFoodData=new FoodData("Sandwitch","A Bread Dish With Meat Inside","50",R.drawable.img_food_item_2,"Takeout");
         myFoodList.add(mFoodData);
-        mFoodData=new FoodData("Chocolate Cake","A Cake Made Of Chocolate","650",R.drawable.img_food_item);
+        mFoodData=new FoodData("Chocolate Cake","A Cake Made Of Chocolate","650",R.drawable.img_food_item,"Nanna Biriyani");
         myFoodList.add(mFoodData);
 
         MyOrderAdapter myOrderAdapter=new MyOrderAdapter(view.getContext(),myFoodList);
