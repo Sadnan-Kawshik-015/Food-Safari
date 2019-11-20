@@ -7,5 +7,6 @@
     <string name="fragment_my_profile">My Profile</string>
     <string name="fragment_discount">Discounts</string>
     <string name="fragment_helpline">Helpline</string>
+    <string name= "api_key">AIzaSyBy28VElBbq4nUqI8ewJdoGpovMFuk8blM</string>
 
 </resources>

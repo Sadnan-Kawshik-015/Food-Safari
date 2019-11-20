@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderFinalization">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Confirm Your Shipment Details"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:id="@+id/tv_fill_shipment_detail"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fill_shipment_detail"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Receiver's Name"
+        android:id="@+id/et_order_finalization_receiver_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_order_finalization_receiver_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:hint="Contact Number"
+        android:id="@+id/et_order_finalization_receiver_phone_number"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_order_finalization_receiver_phone_number"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Address"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_order_finalization_receiver_address"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="Confirm"
+        android:id="@+id/btn_confirm_order"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

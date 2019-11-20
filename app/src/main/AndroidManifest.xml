@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:allowBackup="true"
@@ -12,8 +16,11 @@
         android:roundIcon="@drawable/icon_food_safari_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyCart"
-            android:parentActivityName=".UserNewsFeed"></activity>
+        <activity
+            android:name=".MyCart"
+            android:parentActivityName=".UserNewsFeed" />
+        <activity android:name=".OrderFinalization"
+            android:parentActivityName=".MyCart"/>
         <activity
             android:name=".CartDetails"
             android:parentActivityName=".RestaurantMenu" />
@@ -55,6 +62,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
     </application>
 
 </manifest>
